@@ -1,18 +1,7 @@
 package com.webspider.skyscanner_hk;
 
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.WebResponse;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.webspider.base.BaseSpider;
-
-import org.w3c.css.sac.CSSException;
-import org.w3c.css.sac.CSSParseException;
-import org.w3c.css.sac.ErrorHandler;
-import org.w3c.dom.html.HTMLElement;
-import sun.tools.jconsole.HTMLPane;
-
-import javax.xml.bind.Element;
-import java.io.IOException;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
  * Created by wayne on 29/05/2017.
@@ -26,9 +15,9 @@ public class HKSpider extends BaseSpider{
         System.setProperty("webdriver.chrome.driverver", "src/com/webspider/chromedriver");
 //        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 //        capabilities.setCapability("marionette", true);
-//        ChromeDriver driver = new ChromeDriver();
-//
-//        driver.get(url);
+        ChromeDriver driver = new ChromeDriver();
+
+        driver.get(url);
     }
 
     private void loadPageWc(){
