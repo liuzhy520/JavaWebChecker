@@ -14,12 +14,12 @@ public class Run {
     public static void main(String args[]) {
         System.out.println("Hello World!");
         new HKSpider().startTask();
-        JFrame homePage = new JFrame("diu nee");
-        homePage.setContentPane(new HomePage().getContent());
-        homePage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        homePage.pack();
-        homePage.setLocationRelativeTo(null);
-        homePage.setVisible(true);
+//        JFrame homePage = new JFrame("diu nee");
+//        homePage.setContentPane(new HomePage().getContent());
+//        homePage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        homePage.pack();
+//        homePage.setLocationRelativeTo(null);
+//        homePage.setVisible(true);
     }
 
 }
