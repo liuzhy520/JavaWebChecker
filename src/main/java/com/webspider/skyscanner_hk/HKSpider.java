@@ -32,18 +32,18 @@ public class HKSpider extends BaseSpider{
     }
 
     private void loadPageWc(){
-        WebClient wc = new WebClient();
-
-        wc.setJavaScriptErrorListener(null);
-        try {
-            HtmlPage page = wc.getPage(url);
-            WebResponse response = page.getWebResponse();
-            String content = response.getContentAsString();
-            System.out.printf(content);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        WebClient wc = new WebClient();
+//
+//        wc.setJavaScriptErrorListener(null);
+//        try {
+//            HtmlPage page = wc.getPage(url);
+//            WebResponse response = page.getWebResponse();
+//            String content = response.getContentAsString();
+//            System.out.printf(content);
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public void startTask(){
