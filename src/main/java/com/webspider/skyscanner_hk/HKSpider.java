@@ -1,5 +1,8 @@
 package com.webspider.skyscanner_hk;
 
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.WebResponse;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.webspider.base.BaseSpider;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,7 +15,7 @@ public class HKSpider extends BaseSpider{
 
 
     private void loadPage(){
-        System.setProperty("webdriver.chrome.driverver", "src/com/webspider/chromedriver");
+        System.setProperty("webdriver.chrome.driverver", "src/main/java/com/webspider/chromedriver");
 //        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 //        capabilities.setCapability("marionette", true);
         ChromeDriver driver = new ChromeDriver();
@@ -21,18 +24,18 @@ public class HKSpider extends BaseSpider{
     }
 
     private void loadPageWc(){
-//        WebClient wc = new WebClient();
+        WebClient wc = new WebClient();
 //
-//        wc.setJavaScriptErrorListener(null);
-//        try {
-//            HtmlPage page = wc.getPage(url);
-//            WebResponse response = page.getWebResponse();
-//            String content = response.getContentAsString();
-//            System.out.printf(content);
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        wc.setJavaScriptErrorListener(null);
+        try {
+            HtmlPage page = wc.getPage(url);
+            WebResponse response = page.getWebResponse();
+            String content = response.getContentAsString();
+            System.out.printf(content);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void startTask(){
