@@ -1,5 +1,6 @@
 package com.webspider.skyscanner_hk;
 
+import com.gargoylesoftware.htmlunit.WebClient;
 import com.webspider.base.BaseSpider;
 
 /**
@@ -10,5 +11,8 @@ public class HKSpider extends BaseSpider{
 
     public void startTask(){
         System.out.print("diunee");
+
+        WebClient wc = new WebClient();
+
     }
 }
