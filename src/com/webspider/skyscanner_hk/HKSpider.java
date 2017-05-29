@@ -1,6 +1,6 @@
-package webspider.skyscanner_hk;
+package com.webspider.skyscanner_hk;
 
-import base.BaseSpider;
+import com.webspider.base.BaseSpider;
 
 /**
  * Created by wayne on 29/05/2017.
