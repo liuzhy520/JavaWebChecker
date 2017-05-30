@@ -15,7 +15,7 @@ public class HKSpider extends BaseSpider{
 
 
     private void loadPage(){
-        System.setProperty("webdriver.chrome.driverver", "src/main/java/com/webspider/chromedriver");
+        System.setProperty("webdriver.chrome.driverver", "src/main/java/com/webspider/");
 //        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 //        capabilities.setCapability("marionette", true);
         ChromeDriver driver = new ChromeDriver();
